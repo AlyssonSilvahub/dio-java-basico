@@ -7,27 +7,33 @@ public class Operadores {
     // boolean variavel = true;
     // variavel = !variavel;
     // System.out.println(variavel);
-    String nomeUm = "Alysson";
-    String nomeDois = new String("Silva");
+//     String nomeUm = "Alysson";
+//     String nomeDois = new String("Silva");
+//     System.out.println(nomeUm.equals(nomeDois));
+//     int numero1 = 1;
+//      int numero2 = 2;
+//      boolean simNao = numero1 == numero2;
+// if (numero1 < numero2) {
+//     System.out.println("a nossa condição é verdadeira");
+// }
+//      System.out.println("numeroUm é  igual a numeroDois?" + simNao);
+//      simNao = numero1 != numero2;
+//      System.out.println("numeroUm é diferente a numeroDois?" + simNao);
+//      simNao = numero1 > numero2;
+//      System.out.println("numeroUm é maior que numeroDois?" + simNao);
+        boolean condicao1 = true;
+        boolean condicao2 = false;
+        if (condicao1 && condicao2) {
+            System.out.println("as duas condições são verdadeiras");
+        }
+        System.out.println("Fim");
 
-System.out.println(nomeUm.equals(nomeDois));
 
-    int numero1 = 1;
-     int numero2 = 2;
-     boolean simNao = numero1 == numero2;
-
-if (numero1 < numero2) {
-    System.out.println("a nossa condição é verdadeira");
-    
-}
-
-     System.out.println("numeroUm é  igual a numeroDois?" + simNao);
+        if (condicao1 || condicao2) {
+            System.out.println("Uma duas condições é verdadeiras");
+        }
+        System.out.println("Fim");
 
 
-     simNao = numero1 != numero2;
-     System.out.println("numeroUm é diferente a numeroDois?" + simNao);
-
-     simNao = numero1 > numero2;
-     System.out.println("numeroUm é maior que numeroDois?" + simNao);
  }
 }
