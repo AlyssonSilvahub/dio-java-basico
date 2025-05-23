@@ -5,7 +5,7 @@ public class FomatadorCepExemplo {
             System.out.println(cepFormatado);
         } catch (CepInvalidoException e) {
            
-            e.printStackTrace();
+            System.out.println("Cep não corresponde");
         }
     }
     static String formatarCep(String cep) throws CepInvalidoException{
