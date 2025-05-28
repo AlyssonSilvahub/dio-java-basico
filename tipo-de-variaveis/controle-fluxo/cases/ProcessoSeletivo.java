@@ -1,11 +1,23 @@
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 public class ProcessoSeletivo {
-    public static void main(String[] args) {      
+    public static void main(String[] args) {    
+        String [] candidatos = {"Felipe","Alex","João", "Alysson", "Rafael"};
+        for(String candidato: candidatos){
+            
+        }  
     }
+     static boolean atender (){
+      return new Random().nextInt(3)==1;
+    }
+
     static void imprimirSelecionados() {
-        String [] candidatos = {"Felipe","Alex","João", "Alysson", "Rafael"};   
+        String [] candidatos = {"Felipe","Alex","João", "Alysson", "Rafael"};
+
         System.out.println("Imprimindo a lista de candidatos informando o indice de elementos");
+
         for (int indice=0; indice < candidatos.length; indice++){
+
             System.out.println("O candidato de n° " + (indice+1) + " é " + candidatos[indice]);
         }
         System.out.println("Forma abreviada");
