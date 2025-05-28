@@ -4,9 +4,33 @@ public class ProcessoSeletivo {
     public static void main(String[] args) {    
         String [] candidatos = {"Felipe","Alex","João", "Alysson", "Rafael"};
         for(String candidato: candidatos){
+            entrandoEmContato(candidato);
             
         }  
+    }            //alterações//
+    static void entrandoEmContato(String candidato){
+        int tentativasRealizadas = 1;
+        boolean continuarTentando = true;
+        boolean atendeu = false;
+        do {
+            atendeu = atender();
+            continuarTentando = !atendeu;
+            if (continuarTentando) 
+                tentativasRealizadas++;
+                else
+                System.out.println("Contato realizado com sucesso");
+            
+
+        }while(continuarTentando && tentativasRealizadas <3);
+
+         if(atendeu)
+         System.out.println("Conseguimos contato com " + candidato + " na "+ tentativasRealizadas +" tentativas");
+         else
+         System.out.println("Não conseguimos contato com" + candidato +", Numero maximo tentativas"+ tentativasRealizadas + " Realizadas");
+
     }
+
+
      static boolean atender (){
       return new Random().nextInt(3)==1;
     }
